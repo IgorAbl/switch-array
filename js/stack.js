@@ -41,15 +41,12 @@ class Node {
   const stack1 = new Stack(10);
   
 
-// const str = 'tenet';
-// str.split(str);
-
 // Нашел такой вот интересный способ проверки, хоть и не через стек :)
 function checkBracketSequence(str) {
   str = str.toLowerCase().replace(/\s/g,'');
   return str === str.split('').reverse().join('');
 }
-// console.log(' ', checkBracketSequence('А роза упала на лапу Азора')); 
+console.log(' ', checkBracketSequence('А роза упала на лапу Азора')); 
 
 
 // debugger;
